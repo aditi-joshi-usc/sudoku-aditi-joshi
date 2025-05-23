@@ -11,6 +11,8 @@ export function Cell({ value, readOnly, onChange }) {
     }
   };
 
+
+  
   return (
     <input
       className={`cell ${readOnly ? 'readonly' : ''}`} type="text" value={value ?? ''} onChange={handleInputChange} readOnly={readOnly} maxLength={1}

@@ -4,14 +4,16 @@ import { Grid } from './components/Grid';
 import './App.css';
 
 function App() {
+  // Initialization
   const [board, setBoard] = useState(generateSudokuPuzzle());
 
-  // Start a new puzzle
+  // refresh 
   const handleNewGame = () => {
     setBoard(generateSudokuPuzzle());
   };
 
   // Check if the current board is correctly solved
+  // copilot auto fill
   const handleCheckSolution = () => {
     if (isBoardSolved(board)) {
       alert('Congratulations! You solved the Sudoku.');
@@ -22,9 +24,13 @@ function App() {
 
   // Auto-solve the current board using backtracking
   const handleSolvePuzzle = () => {
-    const boardCopy = board.map(row => row.map(cell => ({ ...cell })));
-    if (solveSudoku(boardCopy)) {
-      setBoard(boardCopy);
+    const copiedBoard = board.map(row =>
+    row.map(cell => ({ ...cell }))
+    );
+     const solved = solveSudoku(copiedBoard);
+
+    if (solved) {
+      setBoard(copiedBoard); // Update the board with the solved version
     } else {
       alert('No valid solution exists.');
     }
@@ -37,7 +43,11 @@ return (
       <Grid board={board} setBoard={setBoard} />
       <div className="buttons">
         <button onClick={handleNewGame}>New Game</button>
+
+
         <button onClick={handleCheckSolution}>Check Solution</button>
+
+
         <button onClick={handleSolvePuzzle}>Solve Puzzle</button>
       </div>
     </div>
