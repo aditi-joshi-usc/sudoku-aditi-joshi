@@ -55,12 +55,12 @@ src/
    ```bash
    npm install
    ```
-'''
-Referred a few README files to create this one
-'''
+
 3. Start development server:
    ```bash
    npm run dev
    ```
-
+'''
+**Referred a few README files to create this one**
+'''
 
