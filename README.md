@@ -60,7 +60,7 @@ src/
    ```bash
    npm run dev
    ```
-'''
+```
 **Referred a few README files to create this one**
-'''
 
+```
