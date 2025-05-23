@@ -19,7 +19,7 @@ This project prioritizes a logically correct and functional Sudoku engine, imple
 ---
 
 
-## 📦 Tech Stack
+## Tech Stack
 
 - React (Vite)
 - JavaScript
@@ -27,7 +27,7 @@ This project prioritizes a logically correct and functional Sudoku engine, imple
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -43,7 +43,7 @@ src/
 
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 1. Clone this repository:
    ```bash
@@ -61,4 +61,5 @@ src/
    npm run dev
    ```
 
+**Referred a few README files to create this one**
 
